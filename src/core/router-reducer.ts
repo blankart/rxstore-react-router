@@ -25,7 +25,17 @@ const initialRouterState: RouterState = {
     }
 }
  
-const routerReducer = ( state: RouterState = initialRouterState, action: RouterAction ): RouterState => {
+/**
+ * Custom reducer function for
+ * creating a rotuer state inside
+ * an RxStore.
+ * 
+ * @param {RouterState} state 
+ * @param {RouterAction} action 
+ * 
+ * @return {RouterState}
+ */
+const routerReducer = ( state: RouterState | undefined = initialRouterState, action: RouterAction ): RouterState => {
     switch ( action.type ) {
     case LOCATION_CHANGE: {
         return {

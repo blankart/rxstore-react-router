@@ -4,6 +4,16 @@ import { Action, RxStore } from 'rxstore-observer'
 import { CallHistoryAction } from '../types'
 import { CALL_HISTORY, LOCATION_CHANGE } from '../constants'
 
+/**
+ * Utilizes the React RxStore Observer's
+ * `inject` function for subscribing to exisiting
+ * React Contexts. By default, it gets the
+ * __RouterContext provider in `react-router` and
+ * use it for changing routes using dispatched
+ * actions.
+ * 
+ * @param {RxStore<S, T>}store 
+ */
 const createRouterObserver = <
     S extends Record<string, any>,
     T extends Action,
