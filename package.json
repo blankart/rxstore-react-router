@@ -1,6 +1,6 @@
 {
   "name": "rxstore-react-router",
-  "version": "1.1.4",
+  "version": "1.1.5",
   "description": "Official Rxstore Observer bindings for React Router",
   "repository": "blankart/rxstore-react-router",
   "main": "dist/rxstore-react-router.js",
@@ -47,9 +47,9 @@
     "react-dom": "^17.0.2",
     "react-router": "^5.2.0",
     "react-router-dom": "^5.2.0",
-    "react-rxstore-observer": "^1.1.0",
+    "react-rxstore-observer": "^1.1.2",
     "rxjs": "^6.6.7",
-    "rxstore-observer": "^1.0.5",
+    "rxstore-observer": "^1.0.6",
     "typescript": "^4.2.3"
   },
   "peerDependenciesMeta": {
